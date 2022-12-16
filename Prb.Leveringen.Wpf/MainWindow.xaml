@@ -1,0 +1,30 @@
+﻿<Window x:Class="Prb.Leveringen.Wpf.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Prb.Leveringen.Wpf"
+        mc:Ignorable="d"
+        Title="Ontvangst Materiaal" Height="679" Width="934" Loaded="Window_Loaded" Background="#FFB5CBE8">
+    <Grid>
+        <Label Content="Leverancier :" HorizontalAlignment="Left" Margin="86,14,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="18"/>
+        <Label Content="Contract nummer :" HorizontalAlignment="Left" Margin="33,49,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="18"/>
+        <Label Content="Beschriving materiaal :" HorizontalAlignment="Left" Margin="0,83,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="18"/>
+        <Label Content="Hoeveelheid :" HorizontalAlignment="Left" Margin="77,120,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="18"/>
+        <TextBox x:Name="txtSupplier" HorizontalAlignment="Left" Margin="217,18,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontSize="18"/>
+        <TextBox x:Name="txtContractNumber" HorizontalAlignment="Left" Margin="218,56,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontSize="18"/>
+        <TextBox x:Name="txtDescription" HorizontalAlignment="Left" Margin="218,91,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontSize="18"/>
+        <TextBox x:Name="txtQuantity" HorizontalAlignment="Left" Margin="217,128,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="60" FontSize="18"/>
+        <Button x:Name="btnDelivery" Content="Levering plaatsen" HorizontalAlignment="Left" Margin="300,126,0,0" VerticalAlignment="Top" Height="41" Width="143" FontWeight="Bold" Click="BtnDelivery_Click" Background="#FF006DFF" Foreground="White" FontSize="16"/>
+        <Label x:Name="lblOverview" Content="" HorizontalAlignment="Left" Margin="14,183,0,0" VerticalAlignment="Top" Height="245" Width="406" FontSize="22"/>
+        <Button x:Name="btnSave" Content="Opslaan" HorizontalAlignment="Left" Margin="436,257,0,0" VerticalAlignment="Top" Height="31" Width="106" Click="BtnSave_Click" Foreground="White" FontWeight="Bold" FontSize="22" Background="#FF32BF00"/>
+        <Button x:Name="btnDelete" Content="Verwijder Alles" HorizontalAlignment="Left" Margin="700,70,0,0" VerticalAlignment="Top" Height="34" Width="120" FontWeight="Bold" Click="BtnDelete_Click" Background="Red" Foreground="White"/>
+        <Label Content="Statistiek" HorizontalAlignment="Left" Margin="199,433,0,0" VerticalAlignment="Top" Height="49" Width="181" FontSize="36" FontWeight="Bold"/>
+        <Label Content="Aantal leveringen" HorizontalAlignment="Left" Margin="86,501,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="16"/>
+        <TextBlock x:Name="tbkNumberOfDeliveries" HorizontalAlignment="Left" Margin="336,494,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="119" Height="46" FontSize="22"/>
+        <ListBox x:Name="lstTotalDeliveries" Margin="569,0,10,106" Height="431" VerticalAlignment="Bottom" FontSize="20"/>
+        <Button x:Name="btnEndOfTheDay" Content="Afsluiten dag" HorizontalAlignment="Left" Margin="681,574,0,0" VerticalAlignment="Top" Height="46" Width="158" FontWeight="Bold" Click="BtnEndOfTheDay_Click"/>
+        <Button x:Name="btnDeleteCurrentAction" Content="Opnieuw" HorizontalAlignment="Left" Margin="436,364,0,0" VerticalAlignment="Top" Height="24" Width="105" FontWeight="Bold" Click="btnDeleteCurrentAction_Click" Background="#FFFFA400" Foreground="White"/>
+
+    </Grid>
+</Window>
